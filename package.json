@@ -1,0 +1,8 @@
+{
+  "name": "student-manager-api-ts-demo",
+  "version": "1.0.0",
+  "description": "This is a simple api using typescript to manage students",
+  "main": "index.js",
+  "author": "Wandarry <berryenick20@gmail.com>",
+  "license": "MIT"
+}
