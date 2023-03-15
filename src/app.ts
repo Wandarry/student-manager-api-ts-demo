@@ -30,7 +30,7 @@ async function newStudents() {
 }
 
 app.get('/', async (req: Request, res: Response) => {
-    const newStudent = await newStudents();
+    await newStudents();
     const students = await prisma.student.findMany();
     res.send(students);
 })
@@ -50,9 +50,6 @@ app.delete('/', async(req: Request, res: Response) => {
             email: "blabla@gmail.com"
         },
     });
-
-    const listOfStudents = await prisma.student.findMany();
-    res.send(listOfStudents);
 })
 
 app.listen(port, () => {
